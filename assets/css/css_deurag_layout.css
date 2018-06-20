@@ -1,0 +1,88 @@
+/* layout 
+DEURAG LAYOUT/GRID
+2018-04-17
+
+*/
+
+
+.deurag-tarifrechner #wrapper {
+	width: 100%;
+	position: absolute;
+}
+
+.deurag-tarifrechner .col,
+.deurag-tarifrechner .form-row-col {
+	margin-left: -6px;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.deurag-tarifrechner .col:first-child,
+.deurag-tarifrechner .form-row-col:first-child,
+.deurag-tarifrechner .form-row-col-1 {
+	margin-left: 0;
+}
+
+.deurag-tarifrechner .wrap {
+	margin: 0 auto;
+}
+.deurag-tarifrechner .wrap {
+	width: 941px;
+}
+
+
+.deurag-tarifrechner .content {
+	position: relative;
+}
+
+
+/* basis 2 col grid 75% / 25% */
+.deurag-tarifrechner .content-col--1 {
+	width: calc(941px - 270px);
+	margin-right: 20px;
+}
+.deurag-tarifrechner .content-col--2 {
+	width: 250px;
+}
+
+
+/* basis 2 col grid 50% / 50% */
+
+.deurag-tarifrechner.deurag-tarifrechner--zusammenfassung .content-col--1 {
+	width: calc(50% - 10px);
+	margin-left: 0;
+}
+.deurag-tarifrechner.deurag-tarifrechner--zusammenfassung .content-col--2 {
+	width: calc(50% - 10px);
+	margin-left: -6px;
+}
+
+
+
+
+@media (max-width: 1360px) { 
+	
+}
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner .wrap {
+		width: 727px;
+	}
+	/* ab tablet bei untereinander und 100% breite */
+	.deurag-tarifrechner .content-col {
+		width: 100%;
+		margin: 0
+	}
+}
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner .wrap {
+		width: calc(100% - 20px);
+	}
+}
+
+
+
+
+

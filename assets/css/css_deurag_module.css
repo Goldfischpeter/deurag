@@ -1,0 +1,1448 @@
+/* module 
+DEURAG MODULE
+2018-06-07
+
+*/
+
+
+.sub-selection-wrapper {
+    display: none;
+}
+div.sub-selection-selected.sub-selection-wrapper {
+    display: block;
+}
+
+
+.form-algn-r {
+	text-align: right;
+}
+
+
+
+
+/* ------ HEADER */
+.deurag-tarifrechner {
+	background-repeat: repeat-x;
+	background-position: 0 204px;
+}
+.deurag-tarifrechner header {
+	height: 125px;
+	margin-bottom: 13px;
+}
+.deurag-tarifrechner header h3 {
+	margin-top: 66px;
+	float: right;
+	text-align: right;
+}
+.deurag-tarifrechner a.logo {
+	background-repeat: no-repeat;
+	background-size: 166px 115px;
+	display: inline-block;
+	width: 166px;
+	height: 115px;
+	margin-top: 13px;
+}
+
+
+
+/* ------ FOOTER */
+.deurag-tarifrechner footer {
+	margin-top: 50px;
+	padding: 20px 20px 14px 20px;
+}
+.deurag-tarifrechner footer .links {
+	display: inline-block;
+}
+.deurag-tarifrechner footer span {
+	padding: 0 10px;
+}
+.deurag-tarifrechner footer span.ver {
+	float: right;
+}
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner header {
+		height: 96px;
+	}
+	.deurag-tarifrechner header h3 {
+		margin-top: 52px;
+	}
+	.deurag-tarifrechner a.logo {
+		background-size: 108px 75px;
+		width: 108px;
+		height: 75px;
+	}
+}
+@media (max-width: 712px) { 
+	.deurag-tarifrechner header {
+		height: 66px;
+	}
+	.deurag-tarifrechner header h3 {
+		margin-top: 14px;
+		width: 40%;
+	}
+	.deurag-tarifrechner a.logo {
+		background-size: 80px 56px;
+		width: 80px;
+		height: 56px;
+	}
+}
+@media (max-width: 500px) { 
+	.deurag-tarifrechner footer .links {
+		display: block;
+		margin-top: 5px;
+	}
+	.deurag-tarifrechner footer .links span:first-child {
+		display: none;
+	}
+}
+
+
+
+
+
+
+/* ------ PROZESS */
+
+.deurag-tarifrechner .prozess {
+	height: 38px;
+}
+
+.deurag-tarifrechner .prozess li {
+	display: inline-block;
+	width: calc(33.31% + 20px);
+	text-align: center;
+	margin-left: -20px;
+	position: relative;
+}
+.deurag-tarifrechner .prozess li:first-child {
+	margin-left: 0;
+	z-index: 10;
+	width: 33.31%;
+}
+.deurag-tarifrechner .prozess li:nth-child(2) {
+    z-index: 9;
+}
+
+.deurag-tarifrechner .prozess li a {
+	display: block;
+	padding: 6px 0 4px 5px;
+	text-decoration: none;
+
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+
+	-webkit-border--top-left-radius: 0;
+	-moz-border--top-left-radius: 0;
+	border-top-left-radius: 0;
+
+	-webkit-border--bottom-left-radius: 0;
+	-moz-border--bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+
+
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+.deurag-tarifrechner .prozess li.aktiv a,
+.deurag-tarifrechner .prozess li.inaktiv a {
+	color: #fff;
+}
+.deurag-tarifrechner .prozess li a {
+	background-color: #EDEDED;
+}
+
+
+@media (max-width: 540px) { 
+	.deurag-tarifrechner .prozess li a span {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* ------ AUSWAHL */
+.deurag-tarifrechner .selector {
+	padding-top: 50px;
+	padding-bottom: 15px;
+}
+.deurag-tarifrechner .selector ul {
+	margin-top: 12px;
+}
+
+.deurag-tarifrechner .selector li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 128px; 
+	height: 148px;
+	border: 1px solid #C6C6C6;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	margin-left: 0;
+	background-color: #fff;
+	
+	background-position: center 26px;
+	background-size: 80px 80px;
+
+	-webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+	cursor: pointer;
+}
+
+
+.deurag-tarifrechner .selector li:first-child,
+.deurag-tarifrechner .selector li:last-child {
+	margin-left: 0;
+}
+
+
+.deurag-tarifrechner .selector .sel--add,
+.deurag-tarifrechner .selector .sel--remove {
+	background-position: calc(50% + 5px) 26px;
+	background-size: 90px 80px;
+}
+
+
+
+
+
+
+
+
+/* info ic und tooltipp */
+.deurag-tarifrechner .selector a.info {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-size: 50px 50px;
+	background-position: -1px -2px;
+}
+
+
+
+.deurag-tarifrechner .selector a[data-tooltip]:before {
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	top: 180px;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #EEEEEE;
+	border: 1px solid #979797;
+	color: #000;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 12px;
+	content: attr(data-tooltip);
+	display: none;
+	width: 350px;
+}
+/* tooltipp rechts ausrichten */
+.deurag-tarifrechner .selector .sel--gewerbe a[data-tooltip]:before,
+.deurag-tarifrechner .selector .sel--flotten a[data-tooltip]:before {
+	left: inherit;
+	right: -80px;
+}
+
+/* pfeil ausrichten */
+.deurag-tarifrechner .selector a[data-tooltip]:after {
+	position: absolute;
+	z-index: 101;
+	left: 60px;
+	top: 170px;
+	background-size: 16px 11px;
+	width: 16px;
+	height: 11px;
+	display: none;
+	content: '';
+}
+.deurag-tarifrechner .selector .sel--gewerbe a[data-tooltip]:after,
+.deurag-tarifrechner .selector .sel--flotten a[data-tooltip]:after {
+	left: inherit;
+	right: calc(-80px + 60px);
+}
+
+/* tooltipp und pfeil einblenden */
+.deurag-tarifrechner .selector a[data-tooltip]:hover:before,
+.deurag-tarifrechner .selector a[data-tooltip]:hover:after {
+	display: block;
+}
+
+
+.deurag-tarifrechner .selector li span {
+	position: absolute;
+	bottom: 9px;
+	width: 100%;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+}
+
+
+@media (max-width: 1360px) { 
+	
+}
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner {
+		background-position: 0 336px;
+	}
+
+	.deurag-tarifrechner .selector {
+		text-align: center;
+	}
+	.deurag-tarifrechner .selector li {
+		width: 148px; 
+		margin: 0 3px 11px 3px;
+	}
+	.deurag-tarifrechner .selector a[data-tooltip]:before {
+		top: 165px;
+		left: 0;
+		width: 250px;
+	}
+	
+	/* tooltipp rechts ausrichten */
+	.deurag-tarifrechner .selector .sel--wohnung a[data-tooltip]:before {
+		left: inherit;
+		right: -80px;
+	}
+
+	.deurag-tarifrechner .selector a[data-tooltip]:after {
+		top: 155px;
+	}
+}
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner {
+		background-position: 0 175px;
+	}
+	.deurag-tarifrechner .selector {
+		padding-top: 20px;
+	}
+	
+	.deurag-tarifrechner .selector li {
+		height: 98px; 
+		background-position: center 14px;
+		background-size: 50px 50px;
+		margin: 0 0 5px 0;
+	}
+	.deurag-tarifrechner .selector .sel--add,
+	.deurag-tarifrechner .selector .sel--remove {
+		background-position: calc(50% + 5px) 14px;
+		background-size: 56px 50px;
+	}
+	
+	.deurag-tarifrechner .selector a[data-tooltip]:before {
+		top: 120px;
+	}
+	.deurag-tarifrechner .selector a[data-tooltip]:after {
+		top: 110px;
+	}
+}
+
+
+
+
+@media (max-width: 660px) { 
+	.deurag-tarifrechner {
+		background-position: 0 276px;
+	}
+	.deurag-tarifrechner .selector h2 {
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 600px) { 
+	.deurag-tarifrechner {
+		background-position: 0 300px;
+	}
+}
+
+@media (max-width: 500px) { 
+	.deurag-tarifrechner {
+		background-position: 0 406px;
+	}
+	.deurag-tarifrechner .selector h2 {
+		width: 70%;
+	}
+	.deurag-tarifrechner .selector .sel--flotten a[data-tooltip]:after {
+		left: 20px;
+		right: inherit;
+	}
+	.deurag-tarifrechner .selector .sel--flotten a[data-tooltip]:before {
+		left: -70px;
+		right: inherit;
+	}
+
+}
+@media (max-width: 380px) { 
+	.deurag-tarifrechner .selector h2 {
+		width: 90%;
+	}
+}
+
+
+
+
+
+
+
+
+/* ------ CONTENT */
+
+.deurag-tarifrechner .content {
+	margin-top: 45px;
+}
+.deurag-tarifrechner .content > .content-col {
+	margin-top: -45px;
+}
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner .content > .content-col {
+		margin-top: 15px;
+	}
+	.deurag-tarifrechner .content > .content-col:first-child {
+		margin-top: -45px;
+	}
+}
+
+
+.deurag-tarifrechner .content h2 {
+	margin-bottom: 18px;
+}
+
+.deurag-tarifrechner .form-row p a {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+.deurag-tarifrechner .content .form-wrapper {
+	margin-top: 60px;
+}
+
+.deurag-tarifrechner .content .form-row {
+	padding: 18px 0;
+	position: relative;
+}
+.deurag-tarifrechner .content .form-row:first-child,
+.deurag-tarifrechner .content .form-row--single {
+	border-top: 1px solid #D7D6D6;
+    border-bottom: 1px solid #D7D6D6;
+}
+
+
+.deurag-tarifrechner .content .form-row.form-row-checkbox {
+    padding: 0;
+}
+.deurag-tarifrechner .content .form-row.form-row-checkbox p label.label-txt {
+    cursor: pointer;
+    padding: 18px 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.form-row-checkbox--hover {
+    background-color: #eee;
+}
+
+
+
+
+
+
+
+
+.deurag-tarifrechner .content .form-row:first-child.form-row--summe {
+	border-top: 1px solid #909090;
+	border-bottom: 1px solid #909090;
+}
+
+
+
+
+.deurag-tarifrechner .content .form-row + .form-row  {
+	border-bottom: 1px solid #D7D6D6;
+}
+.deurag-tarifrechner .content .form-row-sb {
+	border-top: 1px solid #D7D6D6;
+	margin-top: 20px;
+}
+
+
+/* CONTENT FORM TOOLTIPP */
+
+.deurag-tarifrechner .content a.info {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-position: center center;
+	background-size: 24px 24px;
+	position: absolute;
+	top: 9px;
+	right: 0;
+}
+
+.deurag-tarifrechner .content a.info[data-tooltip]:before {
+	position: absolute;
+	z-index: 100;
+	right: 50px;
+	top: -10px;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #EEEEEE;
+	border: 1px solid #979797;
+	color: #000;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 12px;
+	content: attr(data-tooltip);
+	display: none;
+	width: 350px;
+}
+.deurag-tarifrechner .content a.info[data-tooltip]:after {
+	position: absolute;
+	z-index: 101;
+	right: 41px;
+	top: 11px;
+	background-size: 11px 16px;
+	width: 11px;
+	height: 16px;
+	display: none;
+	content: '';
+}
+
+.deurag-tarifrechner .content a.info[data-tooltip]:hover:before,
+.deurag-tarifrechner .content a.info[data-tooltip]:hover:after {
+	display: block;
+}
+
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner .content .tarif-titel a.info {
+		top: 3px;
+	}
+	.deurag-tarifrechner .content a.info[data-tooltip]:before {
+		width: 225px;
+	}
+}
+
+
+
+
+
+
+/* ------ CONTENT FORM ELEMENTE */
+
+/* default grid: 40% : 60% */
+.deurag-tarifrechner .form-row-col-1 {
+	padding-right: 20px;
+	width: calc(40% - 20px);
+}
+.deurag-tarifrechner .form-row-col-2 {
+	width: 60%;
+}
+
+
+/* 70 : 30 */
+.deurag-tarifrechner--step2 .form-row-col-1,
+.deurag-tarifrechner .form-row--datenschutz .form-row-col-1  {
+	padding-right: 30px;
+	width: calc(70% - 30px);
+}
+.deurag-tarifrechner--step2 .form-row-col-2,
+.deurag-tarifrechner .form-row--datenschutz .form-row-col-2 {
+	width: 30%;
+}
+
+/* 30 : 70 */
+.deurag-tarifrechner .form-row--zahlungsweise .form-row-col-1  {
+	padding-right: 0px;
+	width: 31%;
+}
+.deurag-tarifrechner .form-row--zahlungsweise .form-row-col-2  {
+	width: 69%;
+}
+
+
+/* 3 col 5 / 15 / 80 */
+.deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col {
+    vertical-align: top;
+}
+.deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-1 {
+	width: 10%;
+	padding-right:0;
+}
+.deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-2 {
+	width: 15%;
+}
+.deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-3 {
+	width: 70%;
+}
+
+
+/* 3 col 20 / 10 / 70 */
+.deurag-tarifrechner .form-row-cols-3-20-10-70 .form-row-col-1 {
+	width: 20%;
+	padding-right:0;
+}
+.deurag-tarifrechner .form-row-cols-3-20-10-70 .form-row-col-2 {
+	width: 10%;
+}
+.deurag-tarifrechner .form-row-cols-3-20-10-70 .form-row-col-3 {
+	width: 70%;
+}
+
+/* 2 col 30 / 70  */
+.deurag-tarifrechner .form-row-cols-2-30-70 > .form-row-col-1 {
+	width: calc(30% - 20px);
+	padding-right: 20px;
+}
+.deurag-tarifrechner .form-row-cols-2-30-70 > .form-row-col-2 {
+	width: 70%;
+}
+.deurag-tarifrechner .form-row-cols-2-30-70.form-row-checkbox > .form-row-col-1 {
+    text-align: right;
+}
+
+/* 2 col 50 / 50  */
+.deurag-tarifrechner .form-row-cols-2-50-50 > .form-row-col-1 {
+	width: calc(50% - 20px);
+	padding-right: 20px;
+}
+.deurag-tarifrechner .form-row-cols-2-50-50 > .form-row-col-2 {
+	width: 50%;
+}
+.deurag-tarifrechner .form-row-cols-2-50-50.form-row-checkbox > .form-row-col-1 {
+    text-align: right;
+}
+
+
+
+
+
+@media (max-width: 968px) { 
+
+	/* 30 : 70 */
+	.deurag-tarifrechner .form-row-col-1 {
+		padding-right: 30px;
+		width: calc(30% - 30px);
+	}
+	.deurag-tarifrechner .form-row-col-2 {
+		width: 70%;
+	}
+
+	.deurag-tarifrechner .form-row--range .form-row-col-1 {
+		width: calc(60% - 30px);
+	}
+	.deurag-tarifrechner .form-row--range .form-row-col-2 {
+		width: 35%;
+    }
+    
+    /* 3 col 5 / 15 / 80 */
+    .deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-1 {
+        width: 10%;
+        padding-right:0;
+    }
+    .deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-2 {
+        width: 15%;
+    }
+    .deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-3 {
+        width: 70%;
+    }
+
+
+}
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner .form-row--range .form-row-col-1 {
+		padding-top: 10px;
+    }
+    
+    .deurag-tarifrechner .form-row-cols-3-5-15-80 .form-row-col-1 {
+        width: 10%;
+        padding-right:0;
+    }
+    .deurag-tarifrechner .form-row-cols-3-5-15-80 .form-row-col-2 {
+        width: 15%;
+    }
+    .deurag-tarifrechner .form-row-cols-3-5-15-80 .form-row-col-3 {
+        width: 75%;
+    }
+
+}
+
+
+
+
+
+
+/* ------ MESSAGES */
+
+.deurag-tarifrechner .form-message {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 20px 20px 18px 20px;
+    margin-bottom: 40px;
+}
+.deurag-tarifrechner .form-message li + li {
+    margin-top: 8px;
+}
+.deurag-tarifrechner .form-message--error {
+    color: #E30018;
+    background-color: #fcdee1;
+}
+.deurag-tarifrechner .form-message--ok {
+    color: #417505;
+    background-color: #DDEBCF;
+}
+.deurag-tarifrechner .form-message--hinweis {
+    color: #3D5E84;
+    background-color: #CEDDEF;
+}
+.deurag-tarifrechner.form-row--error {
+    color: #E30018;
+}
+
+
+
+
+/* ------ ACTION */
+.deurag-tarifrechner .content .form-row-action {
+    text-align: right;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+.deurag-tarifrechner.deurag-tarifrechner--step2 .content .form-row-action,
+.deurag-tarifrechner.deurag-tarifrechner--step3 .content .form-row-action {
+    border-top: 1px solid #D7D6D6;
+}
+
+.deurag-tarifrechner.deurag-tarifrechner--step2  .content .form-row-action--rabatte {
+    text-align: left;
+    border-top: none;
+    padding-top: 10px;
+    margin-top: -20px;
+}
+
+.deurag-tarifrechner .content .form-row + .form-row-action  {
+    border-bottom: none;
+}
+
+
+.deurag-tarifrechner .form-row-action .btn {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 9px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+
+
+.deurag-tarifrechner .form-row-action .btn--calc,
+.deurag-tarifrechner .form-row-action .btn--back {
+    background-color: #4B4B35;
+}
+.deurag-tarifrechner .form-row-action .btn--calc:hover,
+.deurag-tarifrechner .form-row-action .btn--back:hover {
+    background-color: #000;
+}
+
+.deurag-tarifrechner .form-row-action li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.deurag-tarifrechner .form-row-action li:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+/* ------ CHECKBOX UND RADIO */
+
+.deurag-tarifrechner input[type="checkbox"],
+.deurag-tarifrechner input[type="radio"] {
+    display: none;
+}
+
+
+
+
+/* ------ RADIO */
+.deurag-tarifrechner .form-row .form-radio-group {
+    margin-top: -7px;
+    margin-bottom: -10px;
+}
+.deurag-tarifrechner .form-row .form-radio {
+    display: inline-block;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    background-color: #c6c6c6;
+}
+
+.deurag-tarifrechner .form-row .form-element.form-radio {
+    margin-left: -30px;
+    position: relative;
+}
+.deurag-tarifrechner .form-row .form-element.form-radio:nth-child(2) {
+    z-index: 9;
+}
+.deurag-tarifrechner .form-row .form-element.form-radio:nth-child(3) {
+    z-index:8;
+}
+.deurag-tarifrechner .form-row .form-element.form-radio:nth-child(4) {
+    z-index: 7;
+}
+.deurag-tarifrechner .form-row .form-element.form-radio:first-child {
+    margin-left: 0;
+    z-index: 10;
+}
+.deurag-tarifrechner .form-row input[type="radio"] + label {
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    padding: 6px 20px 4px 20px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.deurag-tarifrechner .form-row input[type="radio"]:checked + label {
+    border: 2px solid white;
+    background-color: #383838;
+    padding: 6px 20px 4px 20px;
+    color: #fff;
+}
+.deurag-tarifrechner .form-row .form-element.form-radio input[type="radio"] + label,
+.deurag-tarifrechner .form-row .form-element.form-radio input[type="radio"]:checked + label  {
+    padding-left: 32px;
+}
+.deurag-tarifrechner .form-row .form-element.form-radio:first-child input[type="radio"] + label,
+.deurag-tarifrechner .form-row .form-element.form-radio:first-child input[type="radio"]:checked + label  {
+    padding-left: 20px;
+}
+
+
+/* ------ CHECKBOX */
+
+.deurag-tarifrechner .form-element.form-checkbox input[type="checkbox"]:checked + label:before {
+    color: #000;
+    content: "✓";
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+.deurag-tarifrechner .form-element.form-checkbox label {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 50px;
+    position: relative;
+    line-height: 29px;
+    font-size: 15px;
+    width: 80%;
+}
+.deurag-tarifrechner .form-element.form-checkbox label:before {
+    background-color: #c6c6c6;
+    top: 12px; /* bottom 1px */
+    content: "";
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    left: 0;
+    margin-right: 10px;
+    margin-top: -10px;
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.deurag-tarifrechner .table-dokumente .form-element.form-checkbox label:before {
+    margin-left: 0;
+}
+.deurag-tarifrechner .table-dokumente .form-element.form-checkbox label {
+    padding-left: 70px;
+}
+.deurag-tarifrechner .form-element.form-checkbox + .form-element.form-checkbox {
+    margin-top: 10px;
+}
+.deurag-tarifrechner .form-element.form-checkbox input[type="checkbox"]:disabled + label {
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+/* ------ INPUT TEXT */
+
+.deurag-tarifrechner .form-row .form-element.form-text {
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+.deurag-tarifrechner .form-row .form-element.form-text input {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 16px;
+	border: 1px solid #c6c6c6;
+	width: 100%;
+}
+.deurag-tarifrechner .form-row.form-row--error .form-element.form-text input {
+	color: #E30018;
+	border: 1px solid #E30018;
+}
+.deurag-tarifrechner .form-row .form-element.form-text span {
+	margin-left: 10px;
+}
+
+/* BREITEN */
+.deurag-tarifrechner .form-row .form-element.form-text--1 input {
+	width: 30px;
+}
+.deurag-tarifrechner .form-row .form-element.form-text--2 input {
+	width: 50px;
+}
+.deurag-tarifrechner .form-row .form-element.form-text--90 input {
+	width: 85%;
+}
+
+
+
+
+/* ------ TEXTAREA */
+.deurag-tarifrechner .form-row .form-textarea span {
+	
+}
+
+
+
+
+/* ------ SELECT */
+.deurag-tarifrechner .form-row .form-element.form-select select
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 16px;
+	border: 1px solid #c6c6c6;
+	width: 90%;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner.deurag-tarifrechner--step2 .content .form-row-action {
+		border-top: none;
+	}
+}
+
+@media (max-width: 712px) { 
+
+	.deurag-tarifrechner .form-row-col {
+		margin: 0;
+	}
+	.deurag-tarifrechner .form-row-col-1 {
+		width: calc(100% - 50px);
+	}
+	.deurag-tarifrechner .form-row-col-2 {
+		width: 100%;
+		margin-top: 10px;
+    }
+    .deurag-tarifrechner .form-row-cols-3-10-15-70 .form-row-col-2 {
+		margin-top: 0;
+    }
+
+	.deurag-tarifrechner--step2 .form-row-col-1  {
+		padding-right: 0;
+	}
+	.deurag-tarifrechner--step2 .form-row-col-1,
+	.deurag-tarifrechner--step2 .form-row-col-2,
+	.deurag-tarifrechner--step2 .form-row--zahlungsweise .form-row-col-1,
+	.deurag-tarifrechner--step2 .form-row--zahlungsweise .form-row-col-2 {
+		width: 100%;
+	}
+
+
+	.deurag-tarifrechner .content .form-row-action {
+		text-align: center;
+	}
+	.deurag-tarifrechner .form-row .form-radio-group,
+	.deurag-tarifrechner .form-row .form-element.form-text {
+		margin-bottom: 0;
+	}
+
+	.deurag-tarifrechner .form-message {
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		padding: 15px 15px 13px 15px;
+	}
+	
+	
+
+	.deurag-tarifrechner .form-row input[type="radio"] + label {
+		padding: 6px 15px 4px 15px;
+	}
+	
+
+	.deurag-tarifrechner .form-row input[type="radio"]:checked  + label {
+		padding: 6px 15px 4px 15px;
+	}
+
+
+	
+	
+	
+}
+
+@media (max-width: 550px) { 
+	.deurag-tarifrechner .form-row-action li {
+		display: block;
+		margin: 20px 0 0 0;
+	}
+}
+
+
+
+
+
+
+
+/* ------  TABLE: ANGABEN */
+.deurag-tarifrechner .table-wrap {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.deurag-tarifrechner .table-angaben > .col {
+	width: 100%;
+	margin: 0;
+}
+
+.deurag-tarifrechner .table-wrap .td-1 {
+	padding-right: 20px;
+	width: calc(50% - 20px);
+}
+.deurag-tarifrechner .table-wrap .table-row {
+	padding: 8px 0 6px 0;
+}
+.deurag-tarifrechner .table-wrap .table-row:first-child,
+.deurag-tarifrechner .table-wrap .table-row + .table-row {
+	border-top: 1px solid #D7D6D6;
+}
+.deurag-tarifrechner .table-wrap .table-row:last-child {
+	border-bottom: 1px solid #D7D6D6;
+}
+.deurag-tarifrechner .table-wrap > .col:first-child .table-row:last-child {
+	border-bottom: none;
+}
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner .table-angaben > .col {
+		width: 48%;
+		margin-left: calc(2% - 5px);
+	}
+	.deurag-tarifrechner .table-angaben > .col:first-child {
+		margin-left: 0;
+		margin-right: 2%;
+	}
+	.deurag-tarifrechner .table-wrap > .col:first-child .table-row:last-child {
+		border-bottom: 1px solid #D7D6D6; 
+	}
+}
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner .table-angaben > .col,
+	.deurag-tarifrechner .table-angaben > .col:first-child {
+		width: 100%;
+		margin: 0
+	}
+	.deurag-tarifrechner .table-wrap > .col:first-child .table-row:last-child {
+		border-bottom: none;
+	}
+}
+
+
+
+
+
+
+/* ------ TARIF-AUSWAHL */
+.deurag-tarifrechner .tarif-select {
+	margin-top: 60px;
+}
+.deurag-tarifrechner .tarif-select > ul > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+	width: 210px;
+	background-image: url(assets/tarif-bg.jpg);
+	background-position: 0 bottom;
+	background-repeat: repeat-x;
+	height: 334px;
+	position: relative;
+	border-bottom: 1px solid #8C8C8C;
+	cursor: pointer;
+}
+.deurag-tarifrechner .tarif-select li:first-child {
+	margin-left: 0;
+}
+
+
+.deurag-tarifrechner .tarif-select .tarif-titel {
+	border-top: 1px solid #8C8C8C;
+	border-bottom: 1px solid #8C8C8C;
+}
+
+
+.deurag-tarifrechner .tarif-select .tarif-titel,
+.deurag-tarifrechner .tarif-select .tarif-details {
+	position: relative;
+}
+.deurag-tarifrechner .tarif-select .tarif-titel,
+.deurag-tarifrechner .tarif-select .tarif-details,
+.deurag-tarifrechner .tarif-select .tarif-preis {
+	color: #383838;
+}
+.deurag-tarifrechner .tarif-select .aktiv .tarif-titel,
+.deurag-tarifrechner .tarif-select .aktiv .tarif-details,
+.deurag-tarifrechner .tarif-select .aktiv .tarif-preis,
+.deurag-tarifrechner .tarif-select li:hover .tarif-titel,
+.deurag-tarifrechner .tarif-select li:hover .tarif-details,
+.deurag-tarifrechner .tarif-select li:hover .tarif-preis {
+	color: #000;
+}
+
+
+
+
+.deurag-tarifrechner .tarif-select .tarif-preis {
+	position: absolute;
+	bottom: 20px;
+	text-align: right;
+	display: block;
+	width: calc(100% - 10px);
+	padding-right: 10px;
+}
+
+.deurag-tarifrechner .tarif-select .tarif-details {
+	min-height: 85px;
+	margin-top: 19px;
+	padding-right: 30px;
+}
+.deurag-tarifrechner .content .tarif-select .tarif-details a.info {
+	top: -10px;
+}
+
+
+
+.deurag-tarifrechner .tarif-select .tarif-titel h4 {
+	padding: 13px 0;
+}
+.deurag-tarifrechner .tarif-select .tarif-downloads li {
+	padding-left: 24px;
+}
+.deurag-tarifrechner .tarif-select .tarif-downloads li + li {
+	margin-top: 4px;
+}
+.deurag-tarifrechner .tarif-select .tarif-preis span {
+	display: block;
+}
+
+
+
+
+.deurag-tarifrechner--reise-rechtsschutz.deurag-tarifrechner .tarif-select > ul > li {
+	width: 100%;
+	height: auto;
+	min-height: 205px;
+}
+
+
+
+
+
+@media (max-width: 968px) { 
+	.deurag-tarifrechner .tarif-select > ul > li {
+		width: 232px;
+		margin-left: 10px;
+	}
+	.deurag-tarifrechner .tarif-select li:first-child {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner .tarif-select > ul > li {
+		margin: 0;
+		width: 100%;
+		height: auto;
+		min-height: 190px;
+	}
+	.deurag-tarifrechner .tarif-select .tarif-titel h4 {
+		padding: 9px 0;
+	}
+	.deurag-tarifrechner .tarif-select .tarif-details {
+		min-height: auto;
+		margin-top: 12px;
+		padding-bottom: 20px;
+	}
+	.deurag-tarifrechner .tarif-select .tarif-preis {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+.deurag-tarifrechner .content .range-rabatt {
+	width: 80%;
+}
+.deurag-tarifrechner .content .range-min,
+.deurag-tarifrechner .content .range-max {
+	width: 5%;
+	font-size: 90%;
+}
+
+.deurag-tarifrechner .content .range,
+.deurag-tarifrechner .content .range-min,
+.deurag-tarifrechner .content .range-max {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media (max-width: 712px) { 
+	.deurag-tarifrechner .content .range-rabatt {
+		width: 70%;
+	}
+}
+
+
+.deurag-tarifrechner .content .form-row.form-row--zielpraemie-kommentar {
+	border-bottom: none;
+}
+
+.deurag-tarifrechner .content .form-textarea label,
+.deurag-tarifrechner .content .form-textarea textarea {
+	width: calc(100% - 20px);
+}
+.deurag-tarifrechner .content .form-textarea textarea {
+	padding: 5px 10px;
+	font-size: 16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #c6c6c6;
+}
+
+
+.deurag-tarifrechner a.download {
+	padding-left: 24px;
+}
+
+
+.deurag-tarifrechner .table-dokumente li.download--pdf {
+    padding: 8px 0 6px 0;
+}
+.deurag-tarifrechner .table-dokumente li.download--pdf:first-child,
+.deurag-tarifrechner .table-dokumente li.download--pdf + li.download--pdf {
+    border-top: 1px solid #D7D6D6;
+}
+.deurag-tarifrechner .table-dokumente li.download--pdf:last-child {
+    border-bottom: 1px solid #D7D6D6;
+}
+.deurag-tarifrechner .table-dokumente a.download {
+    padding-left: 0;
+    background-image: none;
+}
+
+
+
+
+
+
+/* ------ ACCORDEON */
+.accordeon-content {
+    display: none;
+}
+.accordeon-content--open {
+    display: block;
+}
+
+.accordeon-trigger {
+    -webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+    border-radius: 500px;
+    padding: 10px 10px 10px 45px;
+    cursor: pointer;
+}
+.accordeon-content .form-row.disabled {
+	opacity: 0.4;
+}
+
+
+
+
+
+/* ------ SPINNER */
+
+.spinner {
+	width: 30px;
+	height: 30px;
+    position: fixed;
+    z-index: 1000;
+	top: 20px;
+	left: calc(50% - 15px);
+	border: 1px solid #ddd;
+
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	display: none;
+}
+.spinner.spinner--on {
+	display: block;
+}
+
+
+@media (max-width: 712px) { 
+	.spinner {
+		top: 10px;
+	}
+}
+
+.spinner .spinner-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+}
+.spinner .spinner-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.spinner .spinner-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.spinner .spinner-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.spinner .spinner-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.spinner .spinner-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.spinner .spinner-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; 
+}
+.spinner .spinner-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  } 
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+  }
+}
+

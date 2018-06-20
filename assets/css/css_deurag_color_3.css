@@ -1,0 +1,256 @@
+/* color 
+DEURAG COLOR
+2018-06-07
+Farbset: Mint
+
+*/
+
+body {
+	color: #000;
+}
+
+.table-wrap .td-1 {
+	color: #4A4A4A;
+}
+
+
+/* rot */
+
+.preis,
+.deurag-tarifrechner .tarif-select li:hover .tarif-titel h4{
+	color: #8FBBD0;
+}
+
+.deurag-tarifrechner .tarif-select > ul > li.aktiv {
+	border-bottom: 1px solid #8FBBD0;
+}
+
+.deurag-tarifrechner .tarif-select > ul > li:hover .tarif-titel,
+.deurag-tarifrechner .tarif-select > ul > li.aktiv .tarif-titel {
+	border-top: 1px solid #8FBBD0;
+	border-bottom: 1px solid #8FBBD0;
+}
+
+.deurag-tarifrechner .prozess li.aktiv a,
+.spinner .spinner-cube:before,
+.deurag-tarifrechner .selector li.sel--aktiv.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .form-row-action .btn,
+.deurag-tarifrechner .selector li.sel--hover:not(.sel--remove),
+.deurag-tarifrechner .selector li.sel--aktiv,
+.deurag-tarifrechner .selector .sel--add {
+	background-color: #8FBBD0;
+}
+
+
+.deurag-tarifrechner .prozess li.inaktiv a {
+	background-color: #488FB0;
+}
+
+.deurag-tarifrechner .tarif-select li.aktiv .tarif-titel h4,
+.deurag-tarifrechner .tarif-select li.aktiv .tarif-preis span,
+.deurag-tarifrechner .tarif-select li:hover .tarif-preis span,
+.deurag-tarifrechner a.download,
+.deurag-tarifrechner .tarif-select .tarif-downloads li a {
+    color: #488FB0;
+}
+.deurag-tarifrechner .form-row-action .btn:hover {
+    background-color: #488FB0;
+}
+
+
+
+.deurag-tarifrechner .selector li.sel--hover:not(.sel--remove),
+.deurag-tarifrechner .selector .sel--add,
+.deurag-tarifrechner .selector li.sel--aktiv span {
+	color: #fff;
+}
+
+.deurag-tarifrechner .selector li.sel--add.sel--remove,
+.deurag-tarifrechner .selector li.sel--aktiv.sel--remove {
+	background-color: #fff;
+}
+
+.deurag-tarifrechner .selector li.sel--add.sel--remove span,
+.deurag-tarifrechner .selector li.sel--aktiv.sel--remove span {
+	color: #000;
+}
+
+
+
+footer {
+	background-color: #D8D8D8;
+}
+
+.accordeon-trigger {
+    background-color: #E30018;
+    color: #fff;
+    background-image: url(assets/ic-acc-down.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: 10px center;
+}
+
+.accordeon-trigger.accordeon-content--open {
+    background-image: url(assets/ic-acc-up.svg);
+}
+
+
+
+.deurag-tarifrechner a.download,
+.deurag-tarifrechner .table-dokumente li.download--pdf,
+.deurag-tarifrechner .tarif-select .tarif-downloads li {
+	background-image: url(assets/ic-tarif-download-3.svg);
+	background-repeat: no-repeat;
+	background-size: 16px 17px;
+}
+.deurag-tarifrechner .table-dokumente li.download--pdf {
+    background-position: 44px 14px;
+}
+
+.deurag-tarifrechner {
+	background-image: url(assets/grad.jpg);
+}
+.deurag-tarifrechner a.logo {
+	background-image: url(assets/deurag-tarifrechner-logo.svg);
+}
+.deurag-tarifrechner a.info {
+	background-image: url(assets/ic-info-kachel.svg);
+}
+.deurag-tarifrechner a.info:hover  {
+	background-image: url(assets/ic-info-kachel-hover.svg);
+}
+.deurag-tarifrechner .selector a[data-tooltip]:after {
+	background-image: url(assets/ic-tooltipp-pfeil.svg);
+}
+.deurag-tarifrechner .content a.info {
+	background-image: url(assets/ic-form-info.svg);
+}
+.deurag-tarifrechner .content a.info[data-tooltip]:after {
+	background-image: url(assets/ic-tooltipp-pfeil-rechts.svg);
+}
+
+/* DEFAULT */
+
+.deurag-tarifrechner .selector .sel--privat {
+	background-image: url(assets/sel-ic-privat-0.svg);
+}
+.deurag-tarifrechner .selector .sel--beruf {
+	background-image: url(assets/sel-ic-beruf-0.svg);
+}
+.deurag-tarifrechner .selector .sel--verkehr {
+	background-image: url(assets/sel-ic-verkehr-0.svg);
+}
+.deurag-tarifrechner .selector .sel--wohnung {
+	background-image: url(assets/sel-ic-wohnung-0.svg);
+}
+.deurag-tarifrechner .selector .sel--vermietung {
+	background-image: url(assets/sel-ic-vermietung-0.svg);
+}
+.deurag-tarifrechner .selector .sel--gewerbe {
+	background-image: url(assets/sel-ic-gewerbe-0.svg);
+}
+.deurag-tarifrechner .selector .sel--flotten {
+	background-image: url(assets/sel-ic-flotten-0.svg);
+}
+.deurag-tarifrechner .selector .sel--reisen {
+	background-image: url(assets/sel-ic-reisen-0.svg);
+}
+.deurag-tarifrechner .selector .sel--sonstiges {
+	background-image: url(assets/sel-ic-sonstiges-0.svg);
+}
+
+/* AKTIV */
+.deurag-tarifrechner .selector li.sel--privat.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--privat.sel--aktiv {
+	background-image: url(assets/sel-ic-privat-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--beruf.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--beruf.sel--aktiv {
+	background-image: url(assets/sel-ic-beruf-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--verkehr.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--verkehr.sel--aktiv {
+	background-image: url(assets/sel-ic-verkehr-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--wohnung.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--wohnung.sel--aktiv {
+	background-image: url(assets/sel-ic-wohnung-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--vermietung.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--vermietung.sel--aktiv {
+	background-image: url(assets/sel-ic-vermietung-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--gewerbe.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--gewerbe.sel--aktiv {
+	background-image: url(assets/sel-ic-gewerbe-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--flotten.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--flotten.sel--aktiv {
+	background-image: url(assets/sel-ic-flotten-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--reisen.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--reisen.sel--aktiv {
+	background-image: url(assets/sel-ic-reisen-1.svg);
+}
+.deurag-tarifrechner .selector li.sel--sonstiges.sel--hover:not(.sel--remove):not(.sel--add),
+.deurag-tarifrechner .selector .sel--sonstiges.sel--aktiv {
+	background-image: url(assets/sel-ic-sonstiges-1.svg);
+}
+
+/* ADD */ 
+.deurag-tarifrechner .selector .sel--privat.sel--add {
+	background-image: url(assets/sel-ic-privat-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--beruf.sel--add {
+	background-image: url(assets/sel-ic-beruf-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--verkehr.sel--add {
+	background-image: url(assets/sel-ic-verkehr-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--wohnung.sel--add {
+	background-image: url(assets/sel-ic-wohnung-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--vermietung.sel--add {
+	background-image: url(assets/sel-ic-vermietung-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--gewerbe.sel--add {
+	background-image: url(assets/sel-ic-gewerbe-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--flotten.sel--add {
+	background-image: url(assets/sel-ic-flotten-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--reisen.sel--add {
+	background-image: url(assets/sel-ic-reisen-1-add.svg);
+}
+.deurag-tarifrechner .selector .sel--sonstiges.sel--add {
+	background-image: url(assets/sel-ic-sonstiges-1-add.svg);
+}
+
+/* REMOVE */
+.deurag-tarifrechner .selector .sel--privat.sel--remove {
+	background-image: url(assets/sel-ic-privat-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--beruf.sel--remove {
+	background-image: url(assets/sel-ic-beruf-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--verkehr.sel--remove {
+	background-image: url(assets/sel-ic-verkehr-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--wohnung.sel--remove {
+	background-image: url(assets/sel-ic-wohnung-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--vermietung.sel--remove {
+	background-image: url(assets/sel-ic-vermietung-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--gewerbe.sel--remove {
+	background-image: url(assets/sel-ic-gewerbe-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--flotten.sel--remove {
+	background-image: url(assets/sel-ic-flotten-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--reisen.sel--remove {
+	background-image: url(assets/sel-ic-reisen-0-del.svg);
+}
+.deurag-tarifrechner .selector .sel--sonstiges.sel--remove {
+	background-image: url(assets/sel-ic-sonstiges-0-del.svg);
+}

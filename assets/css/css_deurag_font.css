@@ -1,0 +1,140 @@
+/* type 
+DEURAG FONTS
+2018-04-17
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fast.fonts.net/lt/1.css?apiType=css&c=d32b4438-9c5d-4cdd-ab42-f1dcdc2b911e&fontids=1391184,1391188');
+@font-face {
+  font-family: FolioStdLight;
+  src: url('fonts/1391184/c2959569-f234-45ae-9dda-ffb153c15f9d.eot?#iefix');
+  src: url('fonts/1391184/c2959569-f234-45ae-9dda-ffb153c15f9d.eot?#iefix') format('eot'),
+    url('fonts/1391184/e0b1cc7d-5f30-4d0d-bbd0-c653a4e121d9.woff2') format('woff2'),
+    url('fonts/1391184/c7ed760c-abbc-4e3a-811f-807eceb0038b.woff') format('woff'),
+    url('fonts/1391184/f6f97bed-36d6-42f3-a7f2-a2fafc43506b.ttf') format('truetype');
+}
+@font-face {
+  font-family: FolioStdMed;
+  src: url('fonts/1391188/56dc94db-0135-469f-a48f-42936175512d.eot?#iefix');
+  src: url('fonts/1391188/56dc94db-0135-469f-a48f-42936175512d.eot?#iefix') format('eot'),
+    url('fonts/1391188/2bcd4274-f36d-43bb-b4d1-bba40331e5e2.woff2') format('woff2'),
+    url('fonts/1391188/c5147a61-5440-4333-bc4c-44f1f3aaa2d7.woff') format('woff'),
+    url('fonts/1391188/0add7ace-b597-4212-a13e-8331e24668b1.ttf') format('truetype');
+}
+
+
+body,
+.deurag-tarifrechner .content .form-textarea textarea {
+	font-family: "Folio W03 Light", Helvetica, Arial, sans-serif;
+	letter-spacing: .04rem;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.4;
+	font-size: 100%;
+}
+
+.deurag-tarifrechner .prozess li a {
+	letter-spacing: 0;
+}
+
+.deurag-tarifrechner h2,
+.deurag-tarifrechner header h3,
+.deurag-tarifrechner .tarif-select .tarif-titel h4 {
+	font-family: 'Bitter', serif;
+}
+
+
+.deurag-tarifrechner h2,
+.deurag-tarifrechner header h3,
+.deurag-tarifrechner .tarif-select .tarif-titel h4 {
+	font-weight: normal;
+}
+
+
+
+.deurag-tarifrechner .tarif-select .tarif-preis span {
+	font-size: 32px;
+}
+
+
+.deurag-tarifrechner .tarif-select .tarif-titel h4,
+.deurag-tarifrechner header h3 {
+	font-size: 22px;
+}
+
+.deurag-tarifrechner .form-row--summe p,
+.deurag-tarifrechner .form-row--summe span {
+	font-size: 20px;
+}
+
+.deurag-tarifrechner .preis,
+.deurag-tarifrechner h2 {
+	font-size: 18px;
+}
+
+.deurag-tarifrechner--zusammenfassung .table-wrap .table-row,
+.deurag-tarifrechner a.download,
+.deurag-tarifrechner .tarif-select .tarif-downloads li a,
+.deurag-tarifrechner .prozess a {
+	font-size: 16px;
+}
+.deurag-tarifrechner .tarif-select .tarif-preis .tarif-zahlungsziel,
+.deurag-tarifrechner .tarif-select .tarif-details {
+	font-size: 15px;
+}
+
+.deurag-tarifrechner .table-wrap,
+.deurag-tarifrechner footer,
+.deurag-tarifrechner footer a {
+	font-size: 14px;
+}
+
+.deurag-tarifrechner .form-row .form-textarea span {
+	font-size: 12px;
+}
+
+.deurag-tarifrechner .tarif-select .tarif-details,
+.deurag-tarifrechner .table-wrap {
+	line-height: 1.3em;
+}
+
+.deurag-tarifrechner .tarif-select .tarif-preis .tarif-zahlungsziel {
+	line-height: .6em;
+}
+
+
+.preis,
+.deurag-tarifrechner .form-row-action .btn {
+	font-weight: bold;
+}
+
+
+
+@media (max-width: 1360px) { 
+	.deurag-tarifrechner header h3 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 968px) { 
+	
+}
+
+@media (max-width: 712px) { 
+
+	.deurag-tarifrechner .tarif-select .tarif-titel h4 {
+		font-size: 20px;
+	}
+	.deurag-tarifrechner h2 {
+		font-size: 16px;
+	}
+	.form-message li, 
+	.form-message a,
+	.deurag-tarifrechner .form-row p,
+	.deurag-tarifrechner header h3 {
+		font-size: 14px;
+	}
+	.deurag-tarifrechner .prozess a {
+		font-size: 13px;
+	}
+}
+
